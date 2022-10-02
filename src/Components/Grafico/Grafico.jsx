@@ -15,34 +15,35 @@ export const Grafico = () => {
     Api.get("/alunos").then((res) => {
       setAlunos(res.data);
       graficoIdade(res.data);
-    });
-    const graficoIdade = (alunoIdades) => {
-      const idades1 = [];
-      const idades2 = [];
-      const idades3 = [];
-      const idades4 = [];
-      const idades5 = [];
-      alunoIdades.map((alunoIdade) => {
-        if (alunoIdade.idade >= 18 && alunoIdade.idade <= 21) {
-          idades1.push(parseInt(alunoIdade.idade));
-          setRengeIdades1(idades1);
-        } else if (alunoIdade.idade > 21 && alunoIdade.idade <= 25) {
-          idades2.push(parseInt(alunoIdade.idade));
-          setRengeIdades2(idades2);
-        } else if (alunoIdade.idade > 25 && alunoIdade.idade <= 29) {
-          idades3.push(parseInt(alunoIdade.idade));
-          setRengeIdades3(idades3);
-        } else if (alunoIdade.idade > 29 && alunoIdade.idade <= 33) {
-          idades4.push(parseInt(alunoIdade.idade));
-          setRengeIdades4(idades4);
-        } else {
-          idades5.push(parseInt(alunoIdade.idade));
-          setRengeIdades5(idades5);
-        }
-      });
-    };
-  }, []);
+    }); 
 
+  }, []);
+  
+  const graficoIdade = (alunoIdades) => {
+    const idades1 = [];
+    const idades2 = [];
+    const idades3 = [];
+    const idades4 = [];
+    const idades5 = [];
+    alunoIdades.map((alunoIdade) => {
+      if (alunoIdade.idade >= 18 && alunoIdade.idade <= 21) {
+        idades1.push(parseInt(alunoIdade.idade));
+        setRengeIdades1(idades1);
+      } else if (alunoIdade.idade > 21 && alunoIdade.idade <= 25) {
+        idades2.push(parseInt(alunoIdade.idade));
+        setRengeIdades2(idades2);
+      } else if (alunoIdade.idade > 25 && alunoIdade.idade <= 29) {
+        idades3.push(parseInt(alunoIdade.idade));
+        setRengeIdades3(idades3);
+      } else if (alunoIdade.idade > 29 && alunoIdade.idade <= 33) {
+        idades4.push(parseInt(alunoIdade.idade));
+        setRengeIdades4(idades4);
+      } else {
+        idades5.push(parseInt(alunoIdade.idade));
+        setRengeIdades5(idades5);
+      }
+    });
+  };
   const mediaIdade = (rengeIdades) => {
     return rengeIdades.reduce((prev, corrent) => {
       return (prev + corrent) / alunos.length;

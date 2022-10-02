@@ -1,0 +1,11 @@
+.tabela {
+  padding: 3px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.tabela th,
+td {
+  padding: 3px;
+  text-align: start;
+  border: 1px solid #ffdd00;
+}

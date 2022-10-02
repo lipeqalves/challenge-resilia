@@ -2,7 +2,6 @@ import { Chart } from "react-google-charts";
 import { Api } from "../../Service/Api";
 import { useState, useEffect } from "react";
 
-import styles from "./Grafico.module.css";
 
 export const Grafico = () => {
   const [alunos, setAlunos] = useState([]);
@@ -14,11 +13,9 @@ export const Grafico = () => {
 
   useEffect(() => {
     Api.get("/alunos").then((res) => {
-      console.log(res.data)
       setAlunos(res.data);
       graficoIdade(res.data);
     });
-
     const graficoIdade = (alunoIdades) => {
       const idades1 = [];
       const idades2 = [];
@@ -57,7 +54,7 @@ export const Grafico = () => {
     Color: "#fff",
     is3D: false,
     backgroundColor: "#ffdd00",
-    width: "300px",
+    width: "320px",
     height: "300px",
   };
   return (
@@ -69,7 +66,7 @@ export const Grafico = () => {
         ["de 22 a 25 anos", mediaIdade(rengeIdades2)],
         ["de 26 a 29 anos", mediaIdade(rengeIdades3)],
         ["De 30 a 33 anos", mediaIdade(rengeIdades4)],
-        ["Acima de 33 anos", mediaIdade(rengeIdades5)],
+        ["Acima de 33 anos",mediaIdade(rengeIdades5)],
       ]}
       options={options}
     />

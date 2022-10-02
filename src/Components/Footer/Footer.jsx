@@ -4,6 +4,7 @@ export const Footer = () => {
         <footer className={styles.footer}>
             <p>Filipe Alves</p>
             <p>2022</p>
+            <p>Resilia</p>
         </footer>
     )
 }

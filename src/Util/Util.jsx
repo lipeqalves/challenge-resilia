@@ -2,12 +2,11 @@ import Swal from "sweetalert2";
 
 export const Success = () => {
   Swal.fire({
-    //position: "top-center",
     title: "Sucesso!",
     text: "Aluno Cadastrado",
     icon: "success",
     showConfirmButton: false,
-    timer: 2000,
+    timer: 1000,
   });
 };
 

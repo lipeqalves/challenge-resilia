@@ -33,7 +33,7 @@ export const Tabela = () => {
             turma={aluno.turma}
             idade={aluno.idade}
           />
-        )).slice(0, 10)}
+        )).slice(0, 14)}
       </tbody>
     </table>
   );

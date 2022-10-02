@@ -21,21 +21,23 @@ No Terminal/Console:
 No Navegador
 <ol>
 	<li>Digite o caminho: <code>http://localhost:5174/</code></li>
-	
+	<li>Ou você pode fazer o acesso a aplicação direto pelo link: <code>https://challenge-resilia.vercel.app/</code></li>
 </ol>
 
-  <h6>** Nesse projeto, Foi utilizado a IDE Visual Studio Code **</h6>
+
+  
+	<h6>** Nesse projeto, Foi utilizado a IDE Visual Studio Code **</h6>
 
 <h3>Tecnologias Utilizadas</h3>
 <div style ="display: inline_block"><br>
 <img aling="center" olt="REACT" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 <img aling="center" olt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img aling="center" olt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
-<img aling="center" olt="CSS3" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+<img aling="center" olt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
 </div>
 <h3>Status do Projeto</h3>
 
-<p align="center"> Challenge Resilia API Finalizada 💻 </p>
+<p align="center"> Challenge Resilia Finalizada 💻 </p>
 
 <h3>Autor</h3>
 
